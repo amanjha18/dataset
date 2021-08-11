@@ -20,4 +20,6 @@ from dataapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pharma/', views.SetPharma.as_view(), name="pharma"),
+    path('drug/', views.DrugReview.as_view(), name='drug'),
+    path('given_year', views.GivenYear.as_view(), name='given_year'),
 ]
